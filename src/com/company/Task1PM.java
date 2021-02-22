@@ -9,7 +9,7 @@ import org.openqa.selenium.chrome.ChromeDriver;
 import java.util.TimerTask;
 import java.util.concurrent.TimeUnit;
 
-public class Task extends TimerTask {       // 7 PM
+public class Task1PM extends TimerTask {       // 1 PM
 
     public void run() {
         System.setProperty("webdriver.chrome.driver", "/Users/dannyg/IdeaProjects/Test_Selenium_Project/chromedriver");
@@ -34,7 +34,7 @@ public class Task extends TimerTask {       // 7 PM
 
         obj.manage().timeouts().implicitlyWait(20, TimeUnit.SECONDS);       //wait
 
-        obj.findElement(By.xpath("//*[@id=\"mainContent\"]/div[2]/div[7]/div[9]/div/div/div/button")).click();  // Choose time(7pm);
+        obj.findElement(By.xpath("//*[@id=\"mainContent\"]/div[2]/div[7]/div[9]/div/div/div/button")).click();  // Choose time(1pm);
 
         obj.manage().timeouts().implicitlyWait(20, TimeUnit.SECONDS);       //wait
 

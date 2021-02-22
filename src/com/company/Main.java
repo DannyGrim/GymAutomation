@@ -24,9 +24,9 @@ public class Main extends TimerTask {
 
         */
             Timer timer = new Timer();
-            Task task = new Task();     //from Task class
+            Task10AM task = new Task10AM();     //from Task class
             SimpleDateFormat sdf = new SimpleDateFormat("dd-MM-yyy hh:mm:ss");
-            Date date = sdf.parse("22-02-2021 16:08:00");
+            Date date = sdf.parse("22-02-2021 16:34:00");
             timer.schedule(task,date);
 
 
