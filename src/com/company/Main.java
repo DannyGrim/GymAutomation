@@ -24,10 +24,33 @@ public class Main extends TimerTask {
 
         */
             Timer timer = new Timer();
-            Task10AM task = new Task10AM();     //from Task class
             SimpleDateFormat sdf = new SimpleDateFormat("dd-MM-yyy hh:mm:ss");
-            Date date = sdf.parse("22-02-2021 16:34:00");
-            timer.schedule(task,date);
+
+            Task task = new Task();     //Task 7PM
+            Date dateMonday = sdf.parse("28-02-2021 19:05:00");     // Sunday February 28th at 19:05 for Mondays March 1 7PM
+            timer.schedule(task,dateMonday);
+
+            Task1PM task2 = new Task1PM();     //Task 7PM
+            Date dateTuesday = sdf.parse("01-03-2021 13:05:00");     // Monday March 1st at 13:05 for Tuesdays March 2nd 1PM
+            timer.schedule(task2,dateTuesday);
+
+            Task task3 = new Task();     //Task 7PM
+            Date dateWednesday = sdf.parse("02-03-2021 19:05:00");     // Tuesday March 2nd at 19:05 for Wednesdays March 3rd
+            timer.schedule(task,dateMonday);
+
+            Task1PM task4 = new Task1PM();     //Task 7PM
+            Date dateThursday = sdf.parse("01-03-2021 13:05:00");     // Monday March1sth at 13:05 for Tuesdays March 2nd 1PM
+            timer.schedule(task2,dateTuesday);
+
+            Task task5 = new Task();     //Task 7PM
+            Date dateFriday = sdf.parse("28-02-2021 19:05:00");     // Sunday February 28th at 19:05 for Mondays March 1 7PM
+            timer.schedule(task,dateMonday);
+
+
+
+
+
+
 
 
 
