@@ -12,18 +12,11 @@ public class Main extends TimerTask {
     }
     public static void main(String[] args) throws ParseException {
 
-        /*
-        TASKS TO COMPLETE
 
-        Add time scheduling
-        Press different register buttons based on the time according to your schedule
-        batch file ?
-        running on windows pc ?
+        /*ALL OF THE ACTIONS BELOW CAN BE CREATED USING A FOR LOOP FOR FUTURE IF YOU WANT TO RUN THE SYSTEM FOR X DAYS.
+        THIS IS FOR ONE WEEK (5 GYM DAYS)*/
 
-        if failed (did not authenticate the 2 factor), try again with a lesser time interval
-
-        */
-            Timer timer = new Timer();
+        Timer timer = new Timer();
             SimpleDateFormat sdf = new SimpleDateFormat("dd-MM-yyy hh:mm:ss");
 
             Task task = new Task();     //Task 7PM
@@ -35,16 +28,16 @@ public class Main extends TimerTask {
             timer.schedule(task2,dateTuesday);
 
             Task task3 = new Task();     //Task 7PM
-            Date dateWednesday = sdf.parse("02-03-2021 19:05:00");     // Tuesday March 2nd at 19:05 for Wednesdays March 3rd
-            timer.schedule(task,dateMonday);
+            Date dateWednesday = sdf.parse("02-03-2021 19:05:00");     // Tuesday March 2nd at 19:05 for Wednesdays March 3rd 7PM
+            timer.schedule(task3,dateWednesday);
 
-            Task1PM task4 = new Task1PM();     //Task 7PM
-            Date dateThursday = sdf.parse("01-03-2021 13:05:00");     // Monday March1sth at 13:05 for Tuesdays March 2nd 1PM
-            timer.schedule(task2,dateTuesday);
+            Task4PM task4 = new Task4PM();     //Task 4PM
+            Date dateThursday = sdf.parse("03-03-2021 16:05:00");     // Wednesday March 5th at 16:05 for Thursday March 2nd 4PM
+            timer.schedule(task4,dateThursday);
 
-            Task task5 = new Task();     //Task 7PM
-            Date dateFriday = sdf.parse("28-02-2021 19:05:00");     // Sunday February 28th at 19:05 for Mondays March 1 7PM
-            timer.schedule(task,dateMonday);
+            Task1PM task5 = new Task1PM();     //Task 1PM
+            Date dateFriday = sdf.parse("04-02-2021 13:05:00");     // Thursday March 4th at 13:05 for Friday March 1 1PM
+            timer.schedule(task5,dateFriday);
 
 
 
